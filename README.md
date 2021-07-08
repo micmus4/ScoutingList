@@ -3,7 +3,7 @@
 
 Hello, this is my biggest JavaFX project to date. It is an application that provides you a possibility to store information about Footballers from all over the world and look through it as you see fit. Every single Football is described by exactly 10 different information such as name, market value or manager that represents the player. Since in real life scouting lists are usually huge and professional scouts can keep information about hundreds or even thousands players, the program gives you huge options to filter through your players.
 
-If you want to test filtering, I suggest you log in to already created test account (login: test123, password: test123) which already contains seven real-life footballers on which you can test how filtering system works in the project. 
+If you want to test filtering, I suggest you log in to already created test account (login: test123, password: test123) which already contains seven real-life footballers on which you can test how filtering system works. 
 
 ![ed1aefcdfed98c73b55d6f81fe1a93e1](https://user-images.githubusercontent.com/71464021/124995004-fd7b9780-e046-11eb-91b8-6e80743fba17.png)
 ![e49675930a86a813f6b660fa0023d455](https://user-images.githubusercontent.com/71464021/124995006-fe142e00-e046-11eb-9d7a-e531605dccc1.png)
