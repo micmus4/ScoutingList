@@ -1,0 +1,7 @@
+Marc-Andre ter Stegen;Germany;ROOF;1992-04-30;FC Barcelona;Right;€60 000 000;75kg;187cm;2025-06-30
+Lionel Messi;Argentina;*Unknown*;1987-06-24;*None*;Left;€100 000 000;72kg;170cm;*Free agent*
+Harry Maguire;England;Triple S Sports;1993-03-05;Manchester United;Right;€50 000 000;96kg;194cm;2025-06-30
+Erling Haaland;Norway;Mino Raiola;2000-07-21;Borrusia Dortmund;Left;€150 000 000;91kg;194cm;2024-06-30
+Gianluigi Donnarumma;Italy;Mino Raiola;1999-02-25;*None*;Right;€60 000 000;87kg;196cm;*Free agent*
+Marco Verratti;Italy;Mino Raiola;1992-11-05;Paris Saint Germain;Right;€60 000 000;68kg;165cm;2024-06-30
+Piotr Zielinski;Poland;BMG-Sport;1994-05-20;SSC Napoli;Both;€50 000 000;75kg;180cm;2024-06-30
