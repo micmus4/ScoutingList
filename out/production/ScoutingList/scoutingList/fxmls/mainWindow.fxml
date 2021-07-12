@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.geometry.Insets?>
+<BorderPane onKeyPressed="#deleteFootballerByKey" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="scoutingList.MainWindowController">
+    <padding>
+        <Insets bottom="25"/>
+    </padding>
+    <top>
+        <MenuBar>
+            <Menu text="Manage">
+                <MenuItem text="Add" onAction="#openAddFootballerWindow"/>
+                <MenuItem text="Edit" onAction="#openEditFootballerWindow"/>
+                <MenuItem text="Delete" onAction="#deleteFootballer"/>
+                <SeparatorMenuItem/>
+                <MenuItem text="Filter" onAction="#openFilterWindow"/>
+                <MenuItem text="Reset filters" onAction="#resetFilters"/>
+                <SeparatorMenuItem/>
+                <MenuItem text="Logout" onAction="#logout"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+   <center>
+     <TableView fx:id="footballerTableView">
+         <columns>
+             <TableColumn prefWidth="150" text="Name">
+                 <cellValueFactory>
+                     <PropertyValueFactory property="name"/>
+                 </cellValueFactory>
+             </TableColumn>
+             <TableColumn prefWidth="75" text="Date of Birth">
+                 <cellValueFactory>
+                     <PropertyValueFactory property="dateOfBirth"/>
+                 </cellValueFactory>
+             </TableColumn>
+             <TableColumn prefWidth="125" text="Nationality">
+                 <cellValueFactory>
+                     <PropertyValueFactory property="nationality"/>
+                 </cellValueFactory>
+             </TableColumn>
+             <TableColumn prefWidth="135" text="Club">
+                 <cellValueFactory>
+                     <PropertyValueFactory property="club"/>
+                 </cellValueFactory>
+             </TableColumn>
+             <TableColumn prefWidth="100" text="Contract Expires">
+                 <cellValueFactory>
+                     <PropertyValueFactory property="contractExpirationDate"/>
+                 </cellValueFactory>
+             </TableColumn>
+             <TableColumn prefWidth="115" text="Manager">
+                 <cellValueFactory>
+                     <PropertyValueFactory property="manager"/>
+                 </cellValueFactory>
+             </TableColumn>
+             <TableColumn fx:id="valueColumn" prefWidth="100" text="Market Value">
+                 <cellValueFactory>
+                     <PropertyValueFactory property="marketValue"/>
+                 </cellValueFactory>
+             </TableColumn>
+             <TableColumn prefWidth="75" text="Height">
+                 <cellValueFactory>
+                     <PropertyValueFactory property="height"/>
+                 </cellValueFactory>
+             </TableColumn>
+             <TableColumn prefWidth="75" text="Weight">
+                 <cellValueFactory>
+                     <PropertyValueFactory property="weight"/>
+                 </cellValueFactory>
+             </TableColumn>
+             <TableColumn prefWidth="75" text="Foot">
+                 <cellValueFactory>
+                     <PropertyValueFactory property="preferredFoot"/>
+                 </cellValueFactory>
+             </TableColumn>
+         </columns>
+     </TableView>
+   </center>
+</BorderPane>

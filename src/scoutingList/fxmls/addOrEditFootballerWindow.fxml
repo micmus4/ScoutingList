@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="scoutingList.AddOrEditFootballerController">
+    <top>
+        <GridPane hgap="15" vgap="15">
+            <padding>
+                <Insets left="100" top="100"/>
+            </padding>
+
+            <Label text="Name: " GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="nameTextField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+            <Label text="Nationality: " GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <ComboBox fx:id="countries" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+            <Label text="Club: " GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <TextField fx:id="clubTextField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+            <Label text="Manager/Agency: " GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <TextField fx:id="managerTextField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            <CheckBox fx:id="noManager" text="Unknown/None" GridPane.columnIndex="2" GridPane.rowIndex="3" onAction="#handleNoManager"/>
+
+            <Label text="Date Of Birth: " GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            <DatePicker fx:id="dateOfBirthPicker" GridPane.columnIndex="1" GridPane.rowIndex="4" editable="false"/>
+
+            <Label text="Market Value (€): " GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+            <ComboBox fx:id="marketValueComboBox" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+            <Label text="Preferred foot: " GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+            <ComboBox fx:id="preferredFootComboBox" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+            <Label text="Height (cm): " GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+            <Spinner  fx:id="heightSpinner" GridPane.columnIndex="1" GridPane.rowIndex="7" min="150" max="225" editable="true"
+                     initialValue="180"/>
+
+            <Label text="Weight (kg): " GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+            <Spinner fx:id="weightSpinner" GridPane.columnIndex="1" GridPane.rowIndex="8" min="40" max="125" editable="true"
+                     initialValue="75"/>
+
+            <Label text="Date of contract expiration: " GridPane.columnIndex="0" GridPane.rowIndex="9"/>
+            <DatePicker fx:id="dateOfContractExpiration" GridPane.columnIndex="1" GridPane.rowIndex="9" editable="false"/>
+            <CheckBox text="Free agent: " fx:id="noContract" GridPane.columnIndex="2" GridPane.rowIndex="9"
+                      onAction="#turnOffUselessFieldsWhenFootballerIsAFreeAgent"/>
+        </GridPane>
+    </top>
+    <bottom>
+        <BorderPane>
+            <right>
+                <VBox>
+                    <HBox spacing="15">
+                        <padding>
+                            <Insets bottom="25" right="50"/>
+                        </padding>
+                        <Button fx:id="addButton" text="Add" onAction="#addFootballer"/>
+                        <Button fx:id="addCancelButton" text="Cancel" onAction="#hideWindow"/>
+                    </HBox>
+                    <HBox spacing="15">
+                        <padding>
+                            <Insets bottom="25" right="50"/>
+                        </padding>
+                        <Button fx:id="editButton" text="Edit" onAction="#editFootballer" visible="false"/>
+                        <Button fx:id="editCancelButton" text="Cancel" onAction="#hideWindow" visible="false"/>
+                    </HBox>
+                </VBox>
+            </right>
+        </BorderPane>
+    </bottom>
+</BorderPane>

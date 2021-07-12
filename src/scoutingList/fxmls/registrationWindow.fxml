@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1"
+          xmlns="http://javafx.com/javafx/11.0.1" fx:controller="scoutingList.LoginAndRegistrationWindowsController">
+
+    <Label text="In order to create account, fill in all the fields" GridPane.columnSpan="2" GridPane.rowIndex="0" GridPane.columnIndex="0">
+        <padding>
+            <Insets left="10"/>
+        </padding>
+    </Label>
+    <Label text="First Name: " GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Label text="Last Name: " GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <Label text="E-mail address: " GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Label text="Login: " GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <Label text="Password: " GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <Label text="Confirm password: " GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <TextField fx:id="firstNameField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <TextField fx:id="lastNameField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <TextField fx:id="emailAddressField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <TextField fx:id="loginField" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <PasswordField fx:id="registrationPasswordField" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    <PasswordField fx:id="registrationPasswordField_CONFIRMATION" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <HBox GridPane.rowIndex="7" GridPane.columnIndex="0" GridPane.columnSpan="2">
+        <padding>
+            <Insets left="100"/>
+        </padding>
+       <Button fx:id="confirmRegistrationButton" text="Register" onAction="#createAccount"/>
+    </HBox>
+
+</GridPane>
